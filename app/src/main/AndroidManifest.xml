@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
 
     <application
+
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -11,16 +15,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ComRudyGagenciaviajes">
+
+        <!-- LoginActivity como pantalla inicial -->
         <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:windowSoftInputMode="adjustResize">
+            android:name=".LoginActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <!-- Otras actividades registradas -->
+        <activity android:name=".RegisterActivity" android:exported="false"/>
+        <activity android:name=".CatalogoActivity" android:exported="false"/>
+        <activity android:name=".CrearDestinoActivity" android:exported="false"/>
+        <activity android:name=".EditarDestinoActivity" android:exported="false"/>
+
+        <!-- MainActivity ya no es LAUNCHER, pero sigue registrada -->
+        <activity
+            android:name=".CatalogoActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize"/>
+    </application>
 </manifest>
