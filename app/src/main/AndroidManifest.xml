@@ -32,10 +32,5 @@
         <activity android:name=".CrearDestinoActivity" android:exported="false"/>
         <activity android:name=".EditarDestinoActivity" android:exported="false"/>
 
-        <!-- MainActivity ya no es LAUNCHER, pero sigue registrada -->
-        <activity
-            android:name=".CatalogoActivity"
-            android:exported="true"
-            android:windowSoftInputMode="adjustResize"/>
     </application>
 </manifest>

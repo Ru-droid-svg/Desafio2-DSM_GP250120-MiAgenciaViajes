@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:margin="16dp"/>
+        android:layout_marginTop="8dp"/>
 
     <EditText
         android:id="@+id/etPasswordReg"
@@ -27,7 +27,7 @@
         app:layout_constraintTop_toBottomOf="@id/etEmailReg"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:margin="16dp"/>
+        android:layout_marginTop="8dp"/>
 
     <TextView
         android:id="@+id/tvErrorReg"

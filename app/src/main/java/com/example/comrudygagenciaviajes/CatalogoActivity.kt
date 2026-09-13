@@ -1,4 +1,4 @@
-package com.tunombre.agenciaviajes
+package com.example.comrudygagenciaviajes
 
 import android.content.Intent
 import android.os.Bundle
